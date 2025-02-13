@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "corretaje-guzman-442313",
+  "private_key_id": "07421b79501dfb6fc5fd476df632b91fe4374729",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC2A1GD2yNpqArN\n+0BXHJk1FjHzkibaWRVJYKN4meMwpWBgtUT+cuLWro5duaKsq1iTTh9aRA2QtAgs\n2+jAh+J/n9dmr9gtMVHat9YCdZjFk7e1IwsS23qvHFU0MyrDtFI/o/KP5QLUq/TU\nvv93sGKguaHOLmA0yyK7E2UT+ghYUWs2omacN6pi8ljQEf8dPgnRPOmDhuISgYpo\nOat/nHMSAcwGJSKa2ghn12j+ePmcceMUiy3tcIvwsp407/h/GFum9Z4jdB8+YaXi\nUfbcd3t4mwZkUuO9tPUmDT4IW2Fh8ezRy8UJ+Q704LeCrPpYFKt+QgMxCZPYwJyK\nG+9H4LtFAgMBAAECggEABSfPkvI4bOa4n6BX8IpmgI1yDsR7W0CeDL0IWa3U30I1\nRP1SyKOibz2fL2JxttMHqEHUkNmlSg2qFEiKWDcWdaemZ0ngeq858qhgZHjGQgUZ\ndVpabEdRO003JfUJEhAKgF5OzD/1YObErD4DaHV+OwU8YxBcjezvEpN4ZSTLlbd0\naVvjfEND+2UZwYN/nBpXlYH5zm/HyxyI0uitwGN+Yt+S9T7SN8j1QlYgfpQZeIt0\nVpD7F829SOg10nC/OLtUaemJdb+sUxJznErhAKxLlx4DKfTyYlMolyvdEBxbZxCk\nJN8K7Etl/y67iKqxcAtCZ5kSbg285hocxXmqKXF84QKBgQDo9MxwrSintOoNXlrc\ncTc+Yx/EdkNgXPmwtiVAJXX0pB83PNqAvDCHDXbM8g9yQG3Lm+Ugi+Zij5B3KZLD\nvHxHdIgp+hDqEztZgVV/omwUWXflnto1xeSuwyAfQVxrcOO/FM9rHVflmfjuFGt3\nS9z9qixu+umoFmFEO86woP8nrQKBgQDIBHjZdVJd7bvT7sLi7B0WMi9xZR75y13Y\nBowH6ZXE8M9AaZ1zOEblbrA0bffLlIWaEM6kyS0nluUBZe+eAjNLySp4z6NetqZR\ns1c2nEjfaTOjU673td2SU8kvsockLIhtPgpO5CxEz211BeAiu8SacwZEe/lcFUCn\nwDK5jrQ0+QKBgQC5rxad4Yf8VVoSGdl2yM9t7PjPUizWTIXB8w2yGanxvDgdgWXx\nIw/TNkoxhegF+5EIsFRsItcaTLCsKvkPB9hP5HT8cJS232l5KHwL5l0bw0ysPHhW\nUEy9eE7MWv7drPf7wQyrppH/M0GWE7StPE0D7HbKZzmDf4M8LifL5ig7aQKBgGha\nbPKHU0HOFoCrwOHDbil2ZWoz58VLZNqgD87Q/2KQgJCKiarjYZmx9hxkgzOjeVC4\nFBfFHdnZ0AC6vhkh7MFNYutE6Wcww/U8K/RB9YMZz+cWceKq7764F+7apccptMPJ\n6nbedHox/llfh2CXtised9ajF6YDMIhUriJBYaOBAoGATIKDzwq/76ag5STnoMNx\nEjT/xVZGpzeZJafurlr/Or8/TtgGGe5i/nSHUVayTmK6DihbMp8qnBFeLja/J+wR\nkBoOVquwJMt3/Y0QKJHvQSfqW12ablydxjN7dcTS1cuu/U8GOWYjkB0dxIRZdo/i\n+PJkxKTVqB9wIRyRSeqTO+4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "corretaje-drive-access@corretaje-guzman-442313.iam.gserviceaccount.com",
+  "client_id": "104656075521103541480",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/corretaje-drive-access%40corretaje-guzman-442313.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

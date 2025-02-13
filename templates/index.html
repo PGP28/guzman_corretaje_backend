@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: 200px; /* Establece un tamaño uniforme */
+            object-fit: cover; /* Asegura que la imagen se ajuste al contenedor sin deformarse */
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+        .gallery img:hover {
+            transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Galería de Imágenes en Google Drive</h1>
+        <div id="gallery" class="gallery"></div>
+    </div>
+
+    <script>
+        async function fetchImages() {
+            const response = await fetch('/api/images');
+            const images = await response.json();
+            const gallery = document.getElementById('gallery');
+            images.forEach(image => {
+                const imgElement = document.createElement('img');
+                imgElement.src = image.url;
+                imgElement.alt = image.name;
+                gallery.appendChild(imgElement);
+            });
+        }
+
+        fetchImages();
+    </script>
+</body>
+</html>
