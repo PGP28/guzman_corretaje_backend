@@ -15,6 +15,7 @@ pymysql = "*"
 cryptography = "*"
 flask-jwt-extended = "*"
 sendgrid = "*"
+google-api-python-client = "*"
 
 [requires]
 python_version = "3.8"
