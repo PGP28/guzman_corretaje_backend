@@ -1,4 +1,12 @@
 import os
+import json
+
+# ✅ Manejo de credenciales desde variables de entorno
+credentials_content = os.getenv("GOOGLE_DRIVE_CREDENTIALS_CONTENT")
+if credentials_content:
+    os.makedirs("instance", exist_ok=True)  # Crear carpeta si no existe
+    with open("instance/corretaje-guzman.json", "w") as f:
+        json.dump(json.loads(credentials_content), f)
 
 class Config:
     SQLALCHEMY_DATABASE_URI = os.getenv(
