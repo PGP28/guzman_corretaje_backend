@@ -71,7 +71,7 @@ def subir_imagen_a_drive(file, categoria):
         print(f"❌ Error al subir la imagen a Drive: {e}")
         return None
 
-@property_routes.route('/', methods=['GET'])
+@property_routes.route('/properties', methods=['GET'])
 def get_properties():
     categoria_id = request.args.get('categoria_id', type=int)
     propiedades = Propiedad.query.filter_by(categoria_id=categoria_id).all() if categoria_id else Propiedad.query.all()

@@ -3,7 +3,7 @@ from models.models import Region, Ciudad, Comuna
 
 ubicaciones_routes = Blueprint('ubicaciones_routes', __name__)
 
-@ubicaciones_routes.route('/', methods=['GET'])
+@ubicaciones_routes.route('/ubicaciones', methods=['GET'])
 def get_ubicaciones():
     regiones = Region.query.all()
     resultado = {}
