@@ -17,7 +17,7 @@ from sqlalchemy import text
 def db_check():
     try:
         from app import db
-        db.session.execute(text('USE cco93507_corretaje_db;'))  # Envuelve la consulta con text()
+        db.session.execute(text('SELECT 1'))  # Envuelve la consulta con text()
         return jsonify({"message": "Conexión exitosa a la base de datos"}), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
