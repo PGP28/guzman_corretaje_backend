@@ -32,7 +32,7 @@ CATEGORIA_ID_MAP = {
 }
 
 # Carpeta donde se almacenarán temporalmente los archivos
-UPLOAD_FOLDER = "uploads"
+UPLOAD_FOLDER = "/tmp/uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 def conectar_google_drive():

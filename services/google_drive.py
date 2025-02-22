@@ -4,7 +4,8 @@ from google.oauth2.service_account import Credentials
 from config import Config
 
 def initialize_drive_api():
-    creds = Credentials.from_service_account_file(Config.GOOGLE_DRIVE_CREDENTIALS)
+    # Crea las credenciales desde el diccionario cargado
+    creds = Credentials.from_service_account_info(Config.GOOGLE_DRIVE_CREDENTIALS)
     return build('drive', 'v3', credentials=creds)
 
 def get_image_urls_from_folder(folder_id):
