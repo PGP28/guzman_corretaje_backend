@@ -8,6 +8,14 @@ class Config:
     )
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
+    # ✅ Opciones para mejorar el manejo de conexiones
+    SQLALCHEMY_ENGINE_OPTIONS = {
+        "pool_pre_ping": True,    # Verifica conexiones antes de usarlas (evita conexiones rotas)
+        "pool_size": 5,           # Número máximo de conexiones en el pool
+        "max_overflow": 10,       # Conexiones adicionales si se llena el pool
+        "pool_timeout": 10        # Tiempo máximo de espera para obtener una conexión
+    }
+
     # Detectar entorno
     ENV = os.getenv("FLASK_ENV", "development")
 
