@@ -10,3 +10,12 @@ def home():
 @home_routes.route('/favicon.ico')
 def favicon():
     return redirect("https://www.google.com/favicon.ico", code=302)
+
+@home_routes.route('/db-check', methods=['GET'])
+def db_check():
+    try:
+        from app import db
+        db.session.execute('SELECT 1')
+        return jsonify({"message": "Conexión exitosa a la base de datos"}), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500

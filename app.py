@@ -1,4 +1,5 @@
 import os
+import logging
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
@@ -23,6 +24,8 @@ app.register_blueprint(property_routes, url_prefix='/api')
 app.register_blueprint(folder_routes, url_prefix='/api')
 app.register_blueprint(ubicaciones_routes, url_prefix='/api')
 app.register_blueprint(home_routes)
+
+logging.basicConfig(level=logging.DEBUG)
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
