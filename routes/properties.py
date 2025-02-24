@@ -104,7 +104,7 @@ def get_properties():
         } for p in propiedades
     ])
 
-@property_routes.route('/create', methods=['POST'])
+@property_routes.route('/properties/create', methods=['POST'])
 def create_property():
     try:
         imagenes = request.files.getlist("imagenes")
@@ -187,5 +187,6 @@ def create_property():
         }), 201
 
     except Exception as e:
-        db.session.rollback()
-        return jsonify({"error": str(e)}), 500
+        print(f"❌ Error al subir la imagen a Drive: {e}")
+        return jsonify({"error": f"Error al subir imagen: {str(e)}"}), 500
+

@@ -1,8 +1,14 @@
 from flask import Blueprint, jsonify, redirect
 from sqlalchemy import text
+from datetime import datetime
 from app import db  # ✅ Importación global para evitar overhead
 
 home_routes = Blueprint('home_routes', __name__)
+
+@home_routes.route('/server-time', methods=['GET'])
+def server_time():
+    now = datetime.now()
+    return jsonify({"server_time": now.strftime("%Y-%m-%d %H:%M:%S")})
 
 @home_routes.route('/', methods=['GET'])
 def home():
